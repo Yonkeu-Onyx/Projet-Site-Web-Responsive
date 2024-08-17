@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="Capture.PNG" alt="" style="width: 30px; height: 30px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"> 
+
+      <img class="navbar-brand" src="logo.png" style="width: 80px; height: 80px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Classics</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Country
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hip Hop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">R&B & Soul</a>
+          </li>
+          <h3 id="hh3" class=" text-dark bg-info  ms-5 p-2 d-flex justify-content-end"> <span class=" badge rounded-pill text-bg-warning">JOYSTER</span>  Discover Amazing Artists and their best songs</h3>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+ 
+
+    <div id="up">
+    <div id="name">The Weeknd</div>
+    <div class="wrapper">
+      <section class="intro" class="d-flex flex-wrap justify-content-between">
+      <h1 class="">BIOGRAPHIE</h1>
+      <div id="bio_tw"class="">The Weeknd, de son vrai nom, Abbel Makkonen Tesfaye est un chanteur Canadien d'origine Ethiopienne, nee le 16 fevrier 1990.
+        Sa carriere commence en 2009, quand il publie des musiques de maniere anonyme sur Youtube. Il fonde ensuite le label XO en 2011 et publie
+         ses premieres mixtapes, "House of Balloons", "Thursday" et "Echoes of Silence"
+        Il acquiert rapidement du succès et la reconnaissance de plusieurs médias en raison de son style de RnB contemporain sombre et de la part de 
+        mystère entourant son identité.
+        Au fil des annees, il sort plusieurs albums, les uns tous aussi reussi que les autres. Son deuxième album, Beauty Behind the Madness, mis en 
+        vente en 2015 et comprenant les singles classés en tête du Billboard Hot 100 Can't Feel My Face et The Hills, remporte le prix du « meilleur 
+        album urbain contemporain » aux Grammy Awards. Il fait partie des albums les plus vendus de l'année. Starboy, le troisième album, connait 
+        un succès commercial et remporte également le prix du meilleur album urbain contemporain aux Grammy Awards. Son quatrième album, After 
+        Hours, affiche plusieurs chansons en tête du classement Billboard Hot 100 telles que Heartless, Save Your Tears et Blinding Lights ; ce
+         dernier single est d’ailleurs devenu la première chanson de l'histoire à
+         passer plus d'un an dans le top 10 du Billboard Hot 100 et est la chanson la plus écoutée sur la plateforme musicale Spotify en 2020. 
+        </div>
+        </section> </div></div>
+    <div id="drope" class="d-flex flex-row">
+      <div class="drop"></div>
+      <div class="drop"></div>
+      <div class="drop"></div>
+    </div>
+    <div class="offcanvas offcanvas-start hidden" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <!--<div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            The current link item
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+        </div> -->
+
+        <div class="container">
+          <table class="table table-borderless table-striped-rows table-hover">
+            <thead><td>Artists</td></thead>
+            <tbody>
+            <tr class="border border-top-2 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="The weeknd.html">The Weekend</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Labrinth.html">Labrinth</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="P!nk.html">P!nk</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Debbie Dawson.html">Debbie Dawson</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Imagine Dragons.html">Imagine Dragons</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Alec Benjamin.html">Alec Benjamin</a></td></tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="container">
+          <table class="table table-borderless table-striped-rows table-hover">
+            <thead><td>Genres</td></thead>
+            <tbody>
+            <tr class="border border-top-2 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="The weeknd.html">Classics</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Labrinth.html">Hip Hop</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="P!nk.html">R&B & Soul</a></td></tr>
+            <tr class="border border-top-0 border-start-0 border-end-0 border-bottom-2 border-warning"><td><a href="Debbie Dawson.html">Country</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+    </div>
+    
+      <section class="slider-container">
+        <div class="slider-images">
+          <div class="slider-img" id="im1">
+            <img src="The Weeknd/Photos/Call-Out-My-Name.jpg" alt="1">
+            <h1 class="hh1">Call Out My Name</h1>
+            <button class="btn btn-warning pla" id="bt1">Play</button>
+          </div>
+          <div class="slider-img" id="im2">
+            <img src="The Weeknd/Photos/Die-For-You.jpg" alt="2">
+            <h1 class="hh1">Die For You</h1>
+            <button class="btn btn-warning pla" id="bt2">Play</button>
+
+          </div>
+          <div class="slider-img active" id="im3">
+            <img src="The Weeknd/Photos/Save-Your-Tears.jpg" alt="3">
+            <h1 class="hh1">Save Your Tears</h1>
+            <button class="btn btn-warning pla" id="bt3">Play</button>
+
+          </div>
+          <div class="slider-img" id="im4">
+            <img src="The Weeknd/Photos/Blinding-Lights.jpg" alt="4">
+            <h1 class="hh1">Blinding Lights</h1>
+            <button class="btn btn-warning pla" id="bt4">Play</button>
+
+          </div>
+          <div class="slider-img" id="im5">
+            <img src="The Weeknd/Photos/Out-Of_Time.webp" alt="5">
+            <h1 class="hh1">Out of Time</h1>
+            <button class="btn btn-warning pla" id="bt5">Play</button>
+
+          </div>
+        </div>
+      </section>
+
+      
+
+   
+      
+
+
+
+
+
+      
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade " id="bl" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Plein Ecran Universel </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="video">
+              <video src="The Weeknd/The Weeknd - Blinding Lights (Official Video)(360P).mp4" controls></video>
+              <p>I've been tryna call <br> 
+                I've been on my own for long enough <br> 
+                Maybe you can show me how to love, maybe <br> 
+                I'm going through withdrawals <br> 
+                You don't even have to do too much <br> 
+                You can turn me on with just a touch, baby <br> 
+                I look around and <br> 
+                Sin City's cold and empty (oh) <br> 
+                No one's around to judge me (oh) <br> 
+                I can't see clearly when you're gone <br> 
+                I said, ooh, I'm blinded by the lights <br> 
+                No, I can't sleep until I feel your touch <br> 
+                I said, ooh, I'm drowning in the night <br> 
+                Oh, when I'm like this, you're the one I trust <br> 
+                (Hey, hey, hey) <br> 
+              </p> <p>
+                I'm running out of time <br> 
+                'Cause I can see the sun light up the sky <br> 
+                So I hit the road in overdrive, baby, oh <br> 
+                The city's cold and empty (oh) <br> 
+                No one's around to judge me (oh) <br> 
+                I can't see clearly when you're gone <br> 
+                I said, ooh, I'm blinded by the lights <br> 
+                No, I can't sleep until I feel your touch <br> 
+                I said, ooh, I'm drowning in the night <br> 
+                Oh, when I'm like this, you're the one I trust <br> 
+                I'm just walking by to let you know (by to let you know) <br> 
+                I can never say it on the phone (say it on the phone) <br> 
+                Will never let you go this time (ooh) <br> 
+                I said, ooh, I'm blinded by the lights <br> 
+                No, I can't sleep until I feel your touch <br> 
+                (Hey, hey, hey) <br> 
+                I said, ooh, I'm blinded by the lights <br> 
+                No, I can't sleep until I feel your touch <br> </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade " id="cl" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">The Weeknd-Call-Out-My-Name</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="video">
+              <video src="The Weeknd/The Weeknd - Call Out My Name (Official Video).mp4" controls></video>
+              <p>We found each other<br>
+                I helped you out of a broken place<br>
+                You gave me comfort<br>
+                But falling for you was my mistake<br>
+                I put you on top, I put you on top<br>
+                I claimed you so proud and openly<br>
+                And when times were rough, when times were rough<br>
+                I made sure I held you close to me<br>
+                So call out my name (call out my name)<br>
+                Call out my name when I kiss you so gently<br>
+                I want you to stay (I want you to stay)<br>
+                I want you to stay, even though you don't want me<br>
+                Girl, why can't you wait? (why can't you wait, baby?)<br>
+                Girl, why can't you wait 'til I fall out of love?<br>
+                Won't you call out my name? (call out my name)<br>
+                Girl, call out my name, and I'll be on my way and<br>
+                I'll be on my<br>
+                I said I didn't feel nothing baby, but I lied<br>
+                I almost cut a piece of myself for your life<br>
+                Guess I was just another pit stop <br> 
+              </p> <p>
+                                  Til you made up your mind<br>
+                  You just wasted my time<br>
+                  You're on top, I put you on top<br>
+                  I claimed you so proud and openly, babe<br>
+                  And when times were rough, when times were rough<br>
+                  I made sure I held you close to me<br>
+                  So call out my name (call out my name, baby)<br>
+                  So call out my name when I kiss you<br>
+                  So gently, I want you to stay (I want you to stay)<br>
+                  I want you to stay even though you don't want me<br>
+                  Girl, why can't you wait? (girl, why can't you wait 'til I)<br>
+                  Girl, why can't you wait 'til I fall out of loving?<br>
+                  Babe, call out my name (say call out my name, baby)<br>
+                  Girl, call out my name, and I'll be on my way, girl<br>
+                  I'll be on my<br>
+                  On my way, on my way<br>
+                  On my way, on my way, ooh<br>
+                  On my way, on my way, on my way<br>
+                  On my way, on my way, on my way<br>
+                  (On my) <br> </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade " id="dfy" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">The Weeknd-Die-For-You</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="video">
+              <video src="The Weeknd/The Weeknd - DIE FOR YOU (Lyrics)(480P)_1.mp4" controls></video>
+              <p>I'm findin' ways to articulate the feeling I'm goin' through <br>
+                I just can't say I don't love you <br>
+                'Cause I love you, yeah <br>
+                It's hard for me to communicate the thoughts that I hold <br>
+                But tonight I'm gon' let you know <br>
+                Let me tell the truth <br>
+                Baby, let me tell the truth, yeah <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                You're scared to be lonely, 'specially in the night <br>
+                I'm scared that I'll miss you, happens every time <br>
+                I don't want this feelin', I can't afford love <br>
+                I try to find a reason to pull us apart <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah<br> 
+              </p> <p>
+                I'm finding ways to manipulate the feelin' you're goin' through <br>
+                But baby girl, I'm not blamin' you <br>
+                Just don't blame me, too, yeah <br>
+                'Cause I can't take this pain forever <br>
+                And you won't find no one that's better <br>
+                'Cause I'm right for you, babe <br>
+                I think I'm right for you, babe <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                I'm just sayin', yeah <br>
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                Na-na-na, na-na-na, na-na-na <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah babe <br>
+                (Die for you) <br> </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade " id="fama" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">The Weeknd-Save-Your-Tears</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="video">
+              <video src="The Weeknd/ROSALÍA - LA FAMA (Lyrics) Ft. The Weeknd(360P).mp4" controls></video>
+              <p>I'm findin' ways to articulate the feeling I'm goin' through <br>
+                I just can't say I don't love you <br>
+                'Cause I love you, yeah <br>
+                It's hard for me to communicate the thoughts that I hold <br>
+                But tonight I'm gon' let you know <br>
+                Let me tell the truth <br>
+                Baby, let me tell the truth, yeah <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                You're scared to be lonely, 'specially in the night <br>
+                I'm scared that I'll miss you, happens every time <br>
+                I don't want this feelin', I can't afford love <br>
+                I try to find a reason to pull us apart <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah<br> 
+              </p> <p>
+                I'm finding ways to manipulate the feelin' you're goin' through <br>
+                But baby girl, I'm not blamin' you <br>
+                Just don't blame me, too, yeah <br>
+                'Cause I can't take this pain forever <br>
+                And you won't find no one that's better <br>
+                'Cause I'm right for you, babe <br>
+                I think I'm right for you, babe <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                I'm just sayin', yeah <br>
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                Na-na-na, na-na-na, na-na-na <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah babe <br>
+                (Die for you) <br> </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade " id="oot" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">The Weeknd-Out-Of-Time</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="video">
+              <video src="The Weeknd/The Weeknd - Out of Time (Official Video)(360P).mp4" controls></video>
+              <p>I'm findin' ways to articulate the feeling I'm goin' through <br>
+                I just can't say I don't love you <br>
+                'Cause I love you, yeah <br>
+                It's hard for me to communicate the thoughts that I hold <br>
+                But tonight I'm gon' let you know <br>
+                Let me tell the truth <br>
+                Baby, let me tell the truth, yeah <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                You're scared to be lonely, 'specially in the night <br>
+                I'm scared that I'll miss you, happens every time <br>
+                I don't want this feelin', I can't afford love <br>
+                I try to find a reason to pull us apart <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah<br> 
+              </p> <p>
+                I'm finding ways to manipulate the feelin' you're goin' through <br>
+                But baby girl, I'm not blamin' you <br>
+                Just don't blame me, too, yeah <br>
+                'Cause I can't take this pain forever <br>
+                And you won't find no one that's better <br>
+                'Cause I'm right for you, babe <br>
+                I think I'm right for you, babe <br>
+                
+                You know what I'm thinkin', see it in your eyes <br>
+                You hate that you want me, hate it when you cry <br>
+                It ain't workin' 'cause you're perfect <br>
+                And I know that you're worth it <br>
+                I can't walk away, oh! <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                I'm just sayin', yeah <br>
+                I would die for you, I would lie for you <br>
+                Keep it real with you, I would kill for you, my baby <br>
+                Na-na-na, na-na-na, na-na-na <br>
+                
+                Even though we're going through it <br>
+                And it makes you feel alone <br>
+                Just know that I would die for you <br>
+                Baby, I would die for you, yeah <br>
+                The distance and the time between us <br>
+                It'll never change my mind, 'cause baby <br>
+                I would die for you <br>
+                Baby, I would die for you, yeah babe <br>
+                (Die for you) <br> </p>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="offcanvas offcanvas-bottom show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Parametres des fichiers temoins</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p style="font-size:30px;"> Acceptez vous les cookies?</p>
+          <button class="btn btn-primary" data-bs-dismiss="offcanvas">Accepter</button>
+        </div>
+      </div>
+
+      <section>
+
+      </section>
+
+      <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a class="" href=""><i class="fa-brands fa-facebook"></i></a>
+                   <a href=""> <i class="fa-brands fa-instagram"></i> </a>
+                  <a href="">  <i class="fa-brands fa-x"></i> </a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i> </a>
+                    <a href=""><i class="fa-brands fa-youtube"></i> </a>
+                
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Onyx Yonkeu</span></p>
+        </div>
+      </footer>
+
+
+        
+      <script src="js/jQuery.js"></script>
+      <script>
+        /*
+        jQuery(document).ready(function($){
+          $('.slider-img').on('click', function(){
+            $('.slider-img').removeClass('active');
+            $(this).addClass('active');
+          })
+        })*/
+
+        let img1=document.getElementById('im1')
+        let img2=document.getElementById('im2')
+        let img3=document.getElementById('im3')
+        let img4=document.getElementById('im4')
+        let img5=document.getElementById('im5')
+        let a = document.querySelectorAll('.slider-img')
+        a.forEach(img =>{ 
+          img.addEventListener('click', function(){
+            if(img==img1){
+              img.classList.add('active')
+              img2.classList.remove('active')
+              img3.classList.remove('active')
+              img4.classList.remove('active')
+              img5.classList.remove('active')
+            }
+            else if(img==img2){
+              img.classList.add('active')
+              img1.classList.remove('active')
+              img3.classList.remove('active')
+              img4.classList.remove('active')
+              img5.classList.remove('active')
+            }
+            else if(img==img3){
+              img.classList.add('active')
+              img1.classList.remove('active')
+              img2.classList.remove('active')
+              img4.classList.remove('active')
+              img5.classList.remove('active')
+            }
+            else if(img==img4){
+              img.classList.add('active')
+              img1.classList.remove('active')
+              img2.classList.remove('active')
+              img3.classList.remove('active')
+              img5.classList.remove('active')
+            }
+            else if(img==img5){
+              img.classList.add('active')
+              img1.classList.remove('active')
+              img3.classList.remove('active')
+              img4.classList.remove('active')
+              img2.classList.remove('active')
+            }
+
+            
+          })
+
+        } )
+
+        let but1=document.getElementById('bt1')
+        let but2=document.getElementById('bt2')
+        let but3=document.getElementById('bt3')
+        let but4=document.getElementById('bt4')
+        let but5=document.getElementById('bt5')
+        let b = document.querySelectorAll('.pla')
+
+        b.forEach(button =>{ 
+          button.addEventListener('click', function(){
+            if(button==but1){
+              button.setAttribute('data-bs-toggle', 'modal')
+              button.setAttribute('data-bs-target', '#cl')
+              button.setAttribute('controls','')
+            }
+            else if(button==but2){
+              button.setAttribute('data-bs-toggle', 'modal')
+              button.setAttribute('data-bs-target', '#dfy')
+            }
+            else if(button==but3){
+              button.setAttribute('data-bs-toggle', 'modal')
+              button.setAttribute('data-bs-target', '#fama')
+            }
+            else if(button==but4){
+              button.setAttribute('data-bs-toggle', 'modal')
+              button.setAttribute('data-bs-target', '#bl')
+            }
+            else if(img==img5){
+              button.setAttribute('data-bs-toggle', 'modal')
+              button.setAttribute('data-bs-target', '#oot')
+            }
+
+            
+          })
+
+        } )
+      </script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
